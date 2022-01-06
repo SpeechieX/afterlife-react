@@ -1,0 +1,78 @@
+[
+	{
+		"question": "Who's behind these NFTs?",
+		"answer": "This project is a collaboration between the Big Head Club team, filmmaker Jason Reitman (Ghostbusters: Afterlife director/writer), and Gil Kenan (Ghostbusters: Afterlife writer). All sanctioned by Ghost Corps and Sony Pictures Entertainment. The Mini-Puft collectible was inspired by the original designs of Canadian artist, Vochelle Yum, the Creative Director for the collection."
+	},
+	{
+		"question": "Where are you distributing the NFTs?",
+		"answer": "Each of the 10 Motion Vignettes will be available on <a href='https://opensea.io/' target='_blank' rel='noreferrer'>OpenSea</a>.<br />The 10,500 Mini-Pufts collectables will be available here."
+	},
+	{
+		"question": "How will you distribute them?",
+		"answer": "One Motion Vignette will be released for each of our Days of Afterlife. Each one will only be available for auction for a 24-hour period on <a href='https://opensea.io/' target='_blank' rel='noreferrer'>OpenSea</a>.<br/>The 10,500 Mini-Puft collectables will be released in 4 stages. <br /><ol><li>Pre-sale exclusively for members of the Big Head Club community and will be open for 2 hours.</li><li>We'll open up reservations for 24 hours, or until they sell out. Anyone can reserve a Mini-Puft NFT &mdash; you'll pay the full price up front, plus a small gas fee. Then, you can come back anytime after the claim phase begins, to optimize gas fees. This saves you eth!</li><li>We'll open up for direct minting until they sell out.</li><li>Finally, we&rsquo;ll put aside 500 known as &ldquo;The Mob.&rdquo; They are extra spicy and will run around Mini-Puft owners&rsquo; wallets, if you come across one AND have the Ghost Trap NFT, you can capture one for free.</li></ol>"
+	},
+	{
+		"question": "How much will the 10,500 collectibles cost?",
+		"answer": "0.08 Ξ"
+	},
+	{
+		"question": "What are Mini-Pufts?",
+		"answer": "They're mischievous little paranormal creatures from the film Ghostbusters: <em>Afterlife</em>. Mint a NFT of a unique Mini-Puft and own it forever."
+	},
+	{
+		"question": "How many Mini-Pufts can be minted per transaction?",
+		"answer": "During the pre-sale for Big Head Club members, 2 per wallet. After that, 10 per transaction."
+	},
+	{
+		"question": "How many traits will the Mini-Pufts have? How rare are they?",
+		"answer": "There are around 225 very unique traits, ranging in chaos and rarity."
+	},
+	{
+		"question": "What are gas fees?",
+		"answer": "Gas fees are the standard costs of doing a transaction on the Ethereum blockchain. We don't control them, nor do we profit from them. The higher the demand, the higher the gas fee&mdash;kinda like Uber surge pricing (so we are finding ways to try to avoid that)."
+	},
+	{
+		"question": "How are we addressing the environmental impact?",
+		"answer": "For the launch of this project, we are offsetting the expected carbon emissions through <strong>Sony&rsquo;s Global Environmental Plan.</strong>"
+	},
+	{
+		"question": "How will you avoid gas wars?",
+		"answer": "To help minimize the gas fees you pay &mdash; and to avoid a possible gas war &mdash; we've come up with the reservation system. Instead of minting an NFT directly (which incurs a higher gas fee), you just 'secure' your order, then come back and mint it once gas fees are lower."
+	},
+	{
+		"question": "How do I qualify for the Reservation Presale?",
+		"answer": "You'll have to have a <a href='https://opensea.io/assets?search[collections][0]=stoner-cats-official&search[collections][1]=oni-ronin&search[sortAscending]=true&search[sortBy]=PRICE' target='_blank' rel='noreferrer'>qualifying Big Head Club NFT</a> in your wallet when we take a snapshot of the blockchain. Having multiple Big Head Club NFTs doesn't give you any advantage in the Reservation Presale, nor does it allow you to purchase additional Mini-Pufts."
+	},
+	{
+		"question": "How does the Reservation Presale work?",
+		"answer": "Anyone with a <a href='https://opensea.io/assets?search[collections][0]=stoner-cats-official&search[collections][1]=oni-ronin&search[sortAscending]=true&search[sortBy]=PRICE' target='_blank' rel='noreferrer'>qualifying Big Head Club NFT</a> in their wallet when we take a blockchain snapshot (see above) will be eligible to buy 2 Mini-Pufts during the Reservation Presale."
+	},
+	{
+		"question": "How does reserving work?",
+		"answer": "Anyone with an Ethereum wallet and enough eth can participate in the reservation phase.<br /><br />During the reservation phase, you'll pay the full purchase price of your NFT, plus a smaller gas fee. (This transaction costs less gas than minting the actual NFT). This secures your specific NFT, but helps avoid expensive gas wars. <br /><br />Then, you can come back later at a time that suits you, click 'Mint,' and mint your actual NFT. You <em>will</em> have to pay gas for this second transaction, but altogether this process saves you money."
+	},
+	{
+		"question": "How does the public sale work?",
+		"answer": "You can mint up to 10 per transaction during the public sale. This is your standard NFT-minting sale &mdash; one transaction, plus whatever the gas fee is at the time."
+	},
+	{
+		"question": "How do traps work?",
+		"answer": "There will be 500 Mini-Pufts roaming the wallets of Mini-Puft NFT holders. They'll randomly appear for an hour at a time (or so), and then they'll leave again. But! You can trap one. To do so, you'll need to have a Trap NFT in your wallet. Then — while the roaming Mini-Puft is still in your wallet — visit our 'Trap' page, and click the ACTIVATE TRAP button."
+	},
+	{
+		"question": "Where do I get a trap?",
+		"answer": "We're releasing 1,000 for free &mdash; but there aren’t enough for everyone. Big Head Club token holders can claim one here on the site or if they’re all gone, find one on <a href='https://opensea.io/' target='_blank' rel='noreferrer'>OpenSea</a>."
+	},
+	{
+		"question": "How will I know if a Mini-Puft visits my wallet?",
+		"answer": "You won&rsquo;t, unless you check back often."
+	},
+	{
+		"question": "How long will the bonus Mini-Pufts be roaming through wallets?",
+		"answer": "Until they're all captured!"
+	},
+	{
+		"question": "How can I contact the Big Head Club team?",
+		"answer": "Hit us up on <a href='https://discord.gg/xpfdgEagSv' target='_blank' rel='noreferrer'>Discord</a> if you have any questions. Or you can <a href='http://twitter.com/bigheadhq' target='_blank' rel='noreferrer'>tweet</a> at us."
+	}
+]
