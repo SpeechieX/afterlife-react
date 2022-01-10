@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import background from "../assets/img/header-clouds.png";
-import mainlogo from "../assets/img/logo-large.png";
-import smalllogo from "../assets/img/logo-small.png";
-import Button from "../components/core/Button";
-import { Row, Col } from "react-bootstrap";
-
+import { Row } from "react-bootstrap";
+// import mainlogo from "../assets/img/logo-large.png";
+// import smalllogo from "../assets/img/logo-small.png";
+// import Button from "../components/core/Button";
 import Gallery from "../components/core/Gallery";
 
-const Mint = () => {
+import { WalletContext } from "../context/WalletContext";
+
+import { startSale } from "../redux/actions/walletActions";
+
+const Mint = (props) => {
+	const Web3 = useContext(WalletContext);
+
+	const dispatch = useDispatch();
+
+	const authorizer = useSelector((state) => state.wallet.walletSynced);
+
+	const [auction, setAuction] = useState(false);
+
 	const styles = {
 		body: {
 			marginLeft: "60px",
@@ -58,6 +70,20 @@ const Mint = () => {
 			marginTop: "50px",
 		},
 	};
+
+	const saleInitiated = () => {
+		setAuction(true);
+		dispatch(startSale());
+	};
+
+	Web3.onUnlock(() => {
+		console.log("unlocked");
+	});
+
+	Web3.onTransaction("request", (qty) => {
+		console.log("tx requested (qty", qty, ")");
+	});
+
 	return (
 		<Row style={styles.opening}>
 			<div style={styles.container}>
@@ -65,10 +91,21 @@ const Mint = () => {
 					<h1 style={styles.title} className="text-center">
 						MINT A MINI-PUFT NOW
 					</h1>
-					<p className="text-center">
-						Check Opensea to see if you can find your own.
-					</p>
-					{/* Add React-Spring Gallery Here */}
+					{authorizer === true ? (
+						<p
+							className="text-center cursor-pointer"
+							onClick={() => saleInitiated()}
+						>
+							Click <span style={{ color: "#9e0b0f" }}>Here</span> to Select a
+							Puft to mint.
+						</p>
+					) : (
+						<p className="text-center cursor-pointer" onClick={null}>
+							Connect Your Wallet First in Order to Click{" "}
+							<span style={{ color: "#9e0b0f" }}>Here</span> to Select a Puft to
+							mint.
+						</p>
+					)}
 					<Gallery />
 				</Row>
 			</div>

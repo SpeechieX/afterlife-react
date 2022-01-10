@@ -116,8 +116,7 @@ p {
 }
 
 .footer_body {
-	margin-top: 100px;
-	height: 50vh;
+	margin-top: 50px;
 	position: relative;
 	bottom: 0;
 }
@@ -179,10 +178,6 @@ p {
 	font-weight: 500;
 }
 
-.header_content_left {
-	/* border: 1px solid purple; */
-}
-
 .header_content_right {
 	display: grid;
 	height: auto;
@@ -222,6 +217,7 @@ p {
 .header_tagline {
 	color: red;
 	text-align: left;
+	letter-spacing: 0em;
 }
 
 @media (max-width: 700px) {
@@ -288,6 +284,15 @@ p {
 	background-size: cover;
 }
 
+.menu {
+	display: inline;
+	padding-left: 30px;
+	padding-right: 30px;
+	color: white;
+	text-transform: none;
+	cursor: pointer;
+}
+
 .nav_container {
 	height: 70px;
 	position: fixed;
@@ -304,21 +309,60 @@ p {
 }
 
 .mint_cards {
-	height: 350px;
+	height: 200px;
 	width: 175px;
 	border: 1px solid silver;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 50px;
+	margin: 0 auto;
+	margin-top: 30px;
 	border-radius: 15px;
 	justify-content: center;
 	align-items: center;
 	opacity: 0.8;
 }
 
+.mint_card_padding {
+	height: 340px;
+	width: 235px;
+	background: #2e2e2e30;
+	border: 1px solid #fffffe40;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	margin-left: 10px;
+}
+
 .mint_cards:hover {
-	border: 3px solid gold;
+	border: 1.5px solid gold;
 	opacity: 1;
+}
+
+.mint_attributes {
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.mint_buying_option {
+	text-align: left;
+	color: #9e0b0f;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.mint_title {
+	text-align: left;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.mint_price {
+	font-weight: 600;
+	text-align: left;
+	color: #fffffc;
+	font-size: 14px;
+	line-height: 0.5;
 }
 
 .mint_collection {

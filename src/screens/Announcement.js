@@ -20,7 +20,7 @@ const Announcement = () => {
 	return (
 		<Row style={styles.row}>
 			<h1 style={styles.caption}>
-				<span style={styles.twelve} className="paint">
+				<span style={styles.twelve} className="paint animate-pulse">
 					12
 				</span>
 				<span>DAYS OF AFTERLIFE DROPS!</span>

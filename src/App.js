@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import Navbar from "./components/core/Navbar";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 
 // @SECTIONS
 import Opening from "./screens/Opening";
@@ -24,18 +24,19 @@ import Image from "./assets/img/logo-main.png";
 //@CONTEXT
 import { WalletContext } from "./context/WalletContext";
 
+import { unlockWallet } from "./redux/actions/walletActions";
+
 // @WEB3 CLASS
 import { Web3Mockware } from "./context/Web3Mockware";
 
 function App({ history }) {
 	const Web3 = new Web3Mockware();
 
+	const dispatch = useDispatch();
+
 	const [navBackground, setNavBackground] = useState(false);
 	const [unlocked, setUnlocked] = useState(null);
 	const [modalShow, setModalShow] = React.useState(false);
-
-	// Create State that shows the version of page based on nav status
-	const [status, setStatus] = useState(0);
 
 	const navRef = useRef();
 	navRef.current = navBackground;
@@ -52,6 +53,11 @@ function App({ history }) {
 			document.removeEventListener("scroll", handleScroll);
 		};
 	}, []);
+
+	const handleStatus = (adr) => {
+		setUnlocked(adr);
+		dispatch(unlockWallet());
+	};
 
 	const styles = {
 		body: {
@@ -77,6 +83,7 @@ function App({ history }) {
 		<Router>
 			<WalletContext.Provider value={Web3}>
 				<div className="App">
+					{/* Navbar Begins Here */}
 					<header className="flex-col nav_container" style={styles.body}>
 						<div className="nav_controls">
 							<div className="float-left">
@@ -90,14 +97,15 @@ function App({ history }) {
 										<h5 style={styles.menu}>Mint</h5>
 									</Link>
 									<h5 style={styles.menu}>Trap</h5>
+
+									{/* Select Wallet Begins Here */}
 									<WalletModal
 										Web3={Web3}
 										show={modalShow}
 										onHide={() => setModalShow(false)}
-										unlocked={unlocked}
+										handleStatus={handleStatus}
 									/>
 									<Link to="#" onClick={() => setModalShow(true)}>
-										{console.log(unlocked)}
 										<Button
 											theme={unlocked === null ? "trans" : "red"}
 											label={unlocked === null ? "CONNECT WALLET" : "CONNECTED"}
@@ -105,6 +113,8 @@ function App({ history }) {
 											height={"45px"}
 										/>
 									</Link>
+									{/* Select Wallet Ends Here */}
+
 									<Button
 										height={"45px"}
 										theme={false}
@@ -115,6 +125,9 @@ function App({ history }) {
 							</div>
 						</div>
 					</header>
+					{/* Navbar Ends Here */}
+
+					{/* Routes */}
 					<Route exact path="/">
 						<main className="text-center">
 							<Opening />
@@ -132,7 +145,9 @@ function App({ history }) {
 							<Footer />
 						</main>
 					</Route>
-					<Route exact path="/mint" component={Mint} />
+					<Route exact path="/mint">
+						<Mint Web3={Web3} />
+					</Route>
 				</div>
 			</WalletContext.Provider>
 		</Router>

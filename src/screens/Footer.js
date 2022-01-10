@@ -11,7 +11,6 @@ const Footer = () => {
 			backgroundPosition: "center",
 			backgroundSize: "cover",
 			objectFit: "cover",
-			maxHeight: "850px",
 		},
 	};
 	return (
@@ -19,7 +18,9 @@ const Footer = () => {
 			<div className="footer_message_container">
 				<h6 className="footer_message">
 					presented by
-					<span className="footer_marker">bighead club</span>
+					<span className="footer_marker animate-pulse duration-100-infinite">
+						bighead club
+					</span>
 					And Friends
 				</h6>
 			</div>

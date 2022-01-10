@@ -49,7 +49,7 @@ const styles = {
 
 function Example() {
 	return data.map((faq) => (
-		<Accordion className="accordion_body">
+		<Accordion key={faq.question} className="accordion_body">
 			<Card bsPrefix className="accordion_list_item">
 				<Card.Header style={styles.body}>
 					<ContextAwareToggle
@@ -57,12 +57,12 @@ function Example() {
 						style={styles.body}
 						className="accordion_title"
 					>
-						<p className="">{faq.question}</p>
+						{faq.question}
 					</ContextAwareToggle>
 				</Card.Header>
 				<Accordion.Collapse eventKey="1">
 					<Card.Body style={styles.body}>
-						<p>{ReactHTMLParser(faq.answer)}</p>
+						{ReactHTMLParser(faq.answer)}
 					</Card.Body>
 				</Accordion.Collapse>
 			</Card>
