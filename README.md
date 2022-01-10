@@ -29,8 +29,8 @@ Some observations while working on this project :
 - Had some issues with a few of the Web3 dependencies including @walletconnect
   which gave many polyfill errors and needed workarounds. It would be great to
   create a custom boilerplate for these projects that we can pull right out of
-  the box and get started. ..
+  the box and get started.
 
-Thank you for giving me the opportunity to work on this project.
+  Thank you for giving me the opportunity to work on this project.
 
 **Erik**
