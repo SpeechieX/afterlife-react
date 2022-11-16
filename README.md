@@ -1,6 +1,6 @@
 # Afterlife Remix
 
-## This project is a website that allows users to upload their own audio files. (URL now discontinued)
+## This project is a website that allows users to interact with a imitation Solidity contracts and mint NFT's. It was used to display control of transaction sequences during Minting processes. (URL now discontinued)
 
 _For Demo Purposes Only._
 
